@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #41506b ;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    min-width: 50rem;
+    height: 70%;
+    padding: 20px;
+    background-color: #41506b ;
+    border: 2px solid blue;
+    box-shadow: 0 0 20px 0 blue;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 600;
+}
+.todoInput{
+    width: 620px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    padding: 0 10px;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 400;
+    outline: none;
+}
+
+button{
+    width: 120px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #5096f6;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+    margin: 10px;
+}
+
+button:hover{
+    background-color: #4083d6;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list{
+    min-width: 80%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    padding: 20px 10px;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo li{
+    width: 100%;
+    padding: 0 0.5rem;
+}
+input[type="checkbox"]{
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 1px solid green;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked{
+    background-color: green;
+}
+
+input[type="checkbox"]:checked::after{
+    content: "✔";
+    position: relative;
+    top: 2px;
+    left: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+li{
+    font-size: 34px;
+    font-weight: 400;
+    flex-grow: 1;/*metni ortalamak için kullanılır*/
+}
+
+.delete{
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 10px;
+    color: red;
+    cursor: pointer;
+}
+
+.red-border{
+    border: 2px solid red;
+}
+
+.green-border{
+    border: 2px solid green;
+}
